@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+    max-width: 100%;
+    font-family: "Playwrite PE", cursive;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    padding: 3rem;
+    background-image: linear-gradient(270.3deg, rgba(84, 212, 228, 1) 0.2%, rgba(68, 36, 164, 1) 100%);
+    box-shadow: 3px 4px 8px cyan;
+}
+
+.main2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main3 {
+    font-family: "Playwrite PE", cursive;
+    font-weight: 600;
+    text-align: center;
+}
+
+.submain1,
+.submain2 {
+    font-family: "Playwrite PE", cursive;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: 1.5px solid white;
+    border-radius: 1rem;
+    box-shadow: 3px 4px 8px cyan;
+}
+
+.submain1 {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.submain1:hover,.submain2:hover{
+    background-color: red;
+}
+
+.para,
+.submain2 {
+    padding: 0.5rem 0.5rem;
+}
+
+i {
+    border-right: 1px solid white;
+    padding: 0.5rem 0.5rem;
+}
+
+.circle1,
+.circle2 {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 3px 4px 8px cyan;
+}
+
+.circle1 {
+    left: 20rem;
+    top: 0.8rem;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(237, 3, 32, 0.87) 20.8%, rgba(242, 121, 1, 0.84) 74.4%);
+}
+
+.circle2 {
+    right: 20rem;
+    bottom: 2rem;
+    background-image: linear-gradient(291.7deg, rgba(255, 134, 134, 1) 21.5%, rgba(249, 141, 255, 1) 93.1%);
+}
+
+.main1 {
+    max-width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    padding: 0 5rem;
+}
+
+.main1 img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.main4 {
+    display: flex;
+    gap: 2rem;
+}
+
+.circle1 {
+    /* animation: left 0.8s ease-in-out 0 infinite; */
+    animation: leftmovement 5s linear 0s infinite;
+}
+
+.circle2 {
+    animation: rightmovement 5s linear 0s infinite;
+}
+
+@keyframes rightmovement {
+    0% {
+        right: 20rem;
+        bottom: 2rem;
+    }
+
+    50% {   
+    right: 18rem;
+    bottom: 2rem;
+    }
+
+    100% {
+        right: 20rem;
+        bottom: 2rem;
+    }
+
+}
+
+@keyframes leftmovement {
+    0% {
+        left: 20rem;
+        top: 0.8rem;
+    }
+
+    50% {
+        left: 22rem;
+        top: 0.8rem;
+    }
+
+    100% {
+        left: 20rem;
+        top: 0.8rem;
+    }
+
+}
+
+.foot{
+    margin: 0 25rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    border: 1px solid black;
+    padding: 0.9rem 0;
+    border-radius: 1rem;
+    background-image: linear-gradient(270.3deg, rgba(84, 212, 228, 1) 0.2%, rgba(68, 36, 164, 1) 100%);
+    box-shadow: 3px 4px 8px cyan;
+    position: absolute;
+    top: 13rem;
+    left: 3rem;
+    scale: 0;
+}
+.active{
+    scale: 1;
+}
+.active2{
+    opacity: 0.4;
+}
+.foot1{
+    border-bottom: 1px solid white;
+    display: flex;
+    gap: 8rem;
+}
+.parafoot{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.foot1 i,.foot3 i{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.foot2{
+    font-weight: 600;
+}
